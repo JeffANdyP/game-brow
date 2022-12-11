@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(196, 250, 250);
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(250, 123, 123);
+}
+
+#categories{
+    /* font-size: 15px;
+    
+    width: 10px;
+    height: 45px;
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    text-align: center;
+    z-index: 20;
+    border-radius: 2px; */
+    color: rgb(119,119,119);
+    display: flex;
+    justify-content: space-between;
+    
+}
+li{
+    display: inline;
+
+    /* text-align: center; */
+}
+#Geography{
+    height: 100px;
+    width: 100px;
+}
+#sports{
+    height: 100px;
+    width: 100px;
+}
+#Science{
+    height: 100px;
+    width: 120px;
+}
+#History{
+    height: 100px;
+    width: 100px;
+}
+#Languages{
+    height: 100px;
+    width: 135px;
+}
+.container{
+    container-type: inline-size
+}
