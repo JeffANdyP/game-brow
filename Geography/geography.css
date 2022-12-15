@@ -1,8 +1,18 @@
+#head{
+	text-align: center;
+	background-color: black;
+	color: white;
+	/* width: 80 */
+	border-radius: 10%;
+	
+}
+
+
 body{
 	padding: 0;
 	margin: 0;	
 	width:100vw;
-	height: 100vh;	
+	height: 90vh;	
 }
 .panel{
 	height: 100vh;
@@ -10,15 +20,17 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: 20px;
 }
 .question-container{
 	margin: 10px;
 	padding: 5px;
 	width: 80vw;
 	height: 10vh;
-	background-color: #c7dddf;
+	background-color: #a3c1c3;
 	font-size: x-large;
 	text-align: center;
+	border-radius: 10%;
 	
 }
 .result{
@@ -73,5 +85,6 @@ body{
 }
 .next{
 	color: white;
-	background-color: #f75b4d;
+	background-color: #f7483e;
 }
+

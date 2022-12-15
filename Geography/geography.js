@@ -31,7 +31,7 @@ const Questions = [{
 },
 {
     id: 3,
-    q: "3. Where was the Bastille?",
+    q: "4. Where was the Bastille?",
     a: [{ text: "Paris", isCorrect: true },
         { text: "Rome", isCorrect: false },
         { text: "New York", isCorrect: false },
@@ -40,7 +40,7 @@ const Questions = [{
 },
 {
     id:4,
-    q: "4.  In what city would one find the Brandenburg Gate?",
+    q: "5.  In what city would one find the Brandenburg Gate?",
     a: [{ text: "Paris", isCorrect: true },
         { text: "Vienna", isCorrect: false },
         { text: "Berlin", isCorrect: true },
@@ -49,7 +49,7 @@ const Questions = [{
 },
 {
     id: 5,
-    q: "5. What is the largest US state by land area?",
+    q: "6. What is the largest US state by land area?",
     a: [{ text: "Alaska", isCorrect: true },
         { text: "California", isCorrect: false },
         { text: "texas", isCorrect: false },
@@ -57,8 +57,8 @@ const Questions = [{
     ]
 },
 {
-    id: 5,
-    q: "What is the capital of Nevada?",
+    id: 6,
+    q: "7. What is the capital of Nevada?",
     a: [{ text: "Jefferson City", isCorrect: false },
         { text: "Carson City", isCorrect: true },
         { text: "Reno", isCorrect: false },
@@ -111,6 +111,9 @@ var selected = "";
 
 // Show selection for op1
 op1.addEventListener("click", () => {
+    if()
+})
+op1.addEventListener("click", () => {
     op1.style.backgroundColor = "lightgoldenrodyellow";
     op2.style.backgroundColor = "lightskyblue";
     op3.style.backgroundColor = "lightskyblue";
@@ -119,6 +122,7 @@ op1.addEventListener("click", () => {
 })
 
 // Show selection for op2
+
 op2.addEventListener("click", () => {
     op1.style.backgroundColor = "lightskyblue";
     op2.style.backgroundColor = "lightgoldenrodyellow";
@@ -151,10 +155,11 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
-        result[0].innerHTML = "True";
+        result[0].innerHTML = "Rigth";
         result[0].style.color = "green";
+        
     } else {
-        result[0].innerHTML = "False";
+        result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
     }
 })
@@ -165,7 +170,7 @@ iterate("0");
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
+const next  = document.getElementsByClassName("next")[0];
 var id = 0;
 
 next.addEventListener("click", () => {
@@ -174,6 +179,32 @@ if (id < 11) {
     id++;
     iterate(id);
     console.log(id);
-}
+} 
 
 })
+
+// // grab the result botttom 
+const rigth = document.getElementById("rigth")
+
+rigth.addEventListener("click", () => {
+    if(selected == "true") {
+        rigth[0].innerHTML = "rigth";
+        right[0].style.color= "blue"
+    } else {
+        rigth[0].innerHTML = "false";
+        rigth[0].style.color = "brown";
+    }
+})
+
+
+// // result method 
+
+// result.addEventListener("click", () => {
+//     if (selected == "true") {
+//         result[0].innerHTML = "True";
+//         result[0].style.color = "green";
+//     } else {
+//         result[0].innerHTML = "False";
+//         result[0].style.color = "red";
+//     }
+// })

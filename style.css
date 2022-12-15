@@ -21,11 +21,12 @@ h1{
     border-radius: 2px; */
     color: rgb(119,119,119);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: spacebetween; */
     
 }
 li{
     display: inline;
+
 
     /* text-align: center; */
 }
@@ -49,6 +50,6 @@ li{
     height: 100px;
     width: 135px;
 }
-.container{
-    container-type: inline-size
+.first_row {
+
 }
