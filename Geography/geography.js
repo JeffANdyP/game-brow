@@ -110,9 +110,9 @@ op4.value = Questions[id].a[3].isCorrect;
 var selected = "";
 
 // Show selection for op1
-op1.addEventListener("click", () => {
-    if()
-})
+// op1.addEventListener("click", () => {
+//     if()
+// })
 op1.addEventListener("click", () => {
     op1.style.backgroundColor = "lightgoldenrodyellow";
     op2.style.backgroundColor = "lightskyblue";
