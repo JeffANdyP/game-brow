@@ -1,3 +1,14 @@
+h1{
+	background-color: #FFE66D;
+	text-align: center;
+	margin: px;
+	padding: 3px;
+	height: 10vh;
+
+
+}
+
+
 #head{
 	text-align: center;
 	background-color: black;
@@ -27,11 +38,11 @@ body{
 	padding: 5px;
 	width: 80vw;
 	height: 10vh;
-	background-color: #a3c1c3;
+	background-color: #1A535C;
 	font-size: x-large;
 	text-align: center;
 	border-radius: 10%;
-	
+	color: #fdf8f5;
 }
 .result{
 	margin: 10px;
@@ -49,7 +60,7 @@ body{
 	padding: 5px;
 	width: 80vw;
 	height: 20vh;
-	background-color: #8ee9f4;
+	background-color: #c7f6c7;
 		
 }
 .option{	
@@ -57,7 +68,7 @@ body{
 	width: 15vw;
 	height: 10vh;
 	font-size: larger;
-	background-color: lightskyblue;
+	background-color: #8febe5;
 	border-radius: 25%;
 }
 .option:hover{
@@ -70,7 +81,7 @@ body{
 	padding: 5px;
 	display: flex;
 	justify-content: space-around;
-	background-color:#c7dddf;
+	background-color:#FFE66D;
 }
 
 .evaluate,.next{

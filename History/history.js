@@ -1,115 +1,109 @@
-
-    // _t.questions = [{
-    //     question: "1. What was the term for the official policy of racial segregation in South Africa until 1994?",
-    //     choices: ["oversight", "Apartheid", "libel", "civility"],
-    //     images: ["../images/Rajah.gif"],
-    //     correct: 2
-    // }, {
-    //     question: "2. Published after her death, what did teenager Anne Frank leave behind?",
-    //     choices: ["Diary", "Poem", "Novel", "Ballad"],
-    //     correct: 1
-
-    // }, {
-    //     question: "3. In 1912, which famous human made sea vessel sunk?",
-    //     choices: ["Le Raymound", "Titanic", "Hands Hedtoft", "Albatross"],
-    //     correct: 2
-
-    // }, {
-    //     question: "4. In 1999, Boris Yeltsin resigned as President of Russia, who replaced him?",
-    //     choices: ["Dmitry", "Alexander Rutskoy", "Vladimir Putin", "Victor Chernomyrdin"],
-    //     correct: 3
-
-    // }, {
-    //     question: "5. In 1994, Jordan and Israel signed a peace treaty that ended a state of war between the two countries that had existed since what year?",
-    //     choices: ["1944", "1946", "1948", "1952"],
-    //     correct: 3
-
-    // }, {
-    //     question: "6. What is the roman name for the goddess Hecate?",
-    //     choices: ["Trivia", "Juno", "Minerva", "Hera"],
-    //     correct: 1 
-
-    // }, {
-    //     question: "7. Who was the first US President to declare war?",
-    //     choices: ["Martin Van Buren", "James Monroe", "James Madison", "John Quincy Adams"],
-    //     correct: 3
-
-    // }, {
-    //     question: "8. The United States bought Alaska from which country?",
-    //     choices: ["Mexico", "Canada", "Spain", "Russia"],
-    //     correct: 4
-    // }];
-   // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "1. Where might one find the Acropolis?",
-    a: [{ text: "Rome", isCorrect: false },
-        { text: "Beijing", isCorrect: false },
-        { text: "Moscow", isCorrect: false },
-        { text: "Athens", isCorrect: true }
+    q: "1. Which of these countries did the Soviet Union NEVER invade?",
+    a: [{ text: "Afghanistan", isCorrect: false },
+        { text: "Finland", isCorrect: false },
+        { text: "Poland", isCorrect: false },
+        { text: "Sweden", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "2. Where is Stonehenge located?",
-    a: [{ text: "Iceland", isCorrect: false, isSelected: false },
-        { text: "England", isCorrect: true },
-        { text: "Stone Mountain", isCorrect: false },
-        { text: "Estonia", isCorrect: false }
+    q: "2. Who was the first person to orbit the Earth?",
+    a: [{ text: "Neil Armstrong", isCorrect: false, isSelected: false },
+        { text: "Yuri Gagarin", isCorrect: true },
+        { text: "Jonh Glenn", isCorrect: false },
+        { text: "Valentina Tereshkova", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "3. Where might one go to see giant stone heads?",
-    a: [{ text: "Stonehenge", isCorrect: false },
-        { text: "The Kremlin", isCorrect: false },
-        { text: "Estern Island", isCorrect: true },
-        { text: "cape Canarveral", isCorrect: false }
+    q: "3. Which of these cities was NOT founded by the Romans?",
+    a: [{ text: "London", isCorrect: false },
+        { text: "Paris", isCorrect: false },
+        { text: "Alexandria", isCorrect: true },
+        { text: "Cologne", isCorrect: false }
     ]
 
 },
 {
     id: 3,
-    q: "4. Where was the Bastille?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Rome", isCorrect: false },
-        { text: "New York", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "4. Where did Zoroastrianism originate?",
+    a: [{ text: "Persia", isCorrect: true },
+        { text: "Egypt", isCorrect: false },
+        { text: "South America", isCorrect: false },
+        { text: "India", isCorrect: false }
     ]
 },
 {
     id:4,
-    q: "5.  In what city would one find the Brandenburg Gate?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Vienna", isCorrect: false },
-        { text: "Berlin", isCorrect: true },
-        { text: "London", isCorrect: false }
+    q: "5. Which of these writers was NOT English?",
+    a: [{ text: "Oscar Wilde", isCorrect: true },
+        { text: "Jane Austen", isCorrect: false },
+        { text: "Agatha Dickens", isCorrect: false },
+        { text: "Jane Austen", isCorrect: false }
     ]
 },
 {
     id: 5,
-    q: "6. What is the largest US state by land area?",
-    a: [{ text: "Alaska", isCorrect: true },
-        { text: "California", isCorrect: false },
-        { text: "texas", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "6. What does a dendrochronologist use to establish dates?",
+    a: [{ text: "Carbon isotopes", isCorrect: false },
+        { text: "Ice cores", isCorrect: false },
+        { text: "Solar Eclipses", isCorrect: false },
+        { text: "Tree Rings", isCorrect: true }
     ]
 },
 {
     id: 6,
-    q: "7. What is the capital of Nevada?",
-    a: [{ text: "Jefferson City", isCorrect: false },
-        { text: "Carson City", isCorrect: true },
-        { text: "Reno", isCorrect: false },
-        { text: "Las Vegas", isCorrect: false }
+    q: "7. In terms of weapons, what is a pike?",
+    a: [{ text: "An improvised Explosive device", isCorrect: false },
+        { text: "A very long spear", isCorrect: true },
+        { text: "a trench knife", isCorrect: false },
+        { text: "A spiked helmet", isCorrect: false }
     ]  
+},
+{
+    id:7,
+    q: "8. Why did whalers hunt sperm whales?",
+    a: [{ text: "for meat", isCorrect: false },
+    { text: "for sport", isCorrect: false },
+    { text: "for skin to nake leather", isCorrect: false },
+    { text: "for oil to make candles", isCorrect: true }
+    ]
+},
+{
+    id:8,
+    q: "9. How many wives did Henry VIII have?",
+    a: [{ text: "1", isCorrect: false },
+    { text: "2", isCorrect: false },
+    { text: "6", isCorrect: true },
+    { text: "4", isCorrect: false }
+    ]
+},
+{
+    id:9,
+    q: "Which of the following was NOT originally invented in China?",
+    a: [{ text: "Silk", isCorrect: false },
+    { text: "Gunpowder", isCorrect: false },
+    { text: "Paper Money", isCorrect: false },
+    { text: "Concrete", isCorrect: true }
+    ]
+},
+{
+    id:10,
+    q: "When was the last time Moscow was ever captured by a foreign power?",
+    a: [{ text: "By Napoleon in 1812", isCorrect: true },
+    { text: "By Jefferson in 1238", isCorrect: false },
+    { text: "By Hitler in 1942", isCorrect: false },
+    { text: "Never", isCorrect: false }
+    ]
 }
 
 
 ]
-
+14. 
 // Set start
 let start = true;
 
@@ -203,6 +197,11 @@ evaluate[0].addEventListener("click", () => {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
     }
+    setTimeout(() =>
+    {
+    result[0].innerHTML = "";
+    }, 500
+    )
 })
 }
 

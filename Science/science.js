@@ -1,71 +1,106 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "1. Where might one find the Acropolis?",
-    a: [{ text: "Rome", isCorrect: false },
-        { text: "Beijing", isCorrect: false },
-        { text: "Moscow", isCorrect: false },
-        { text: "Athens", isCorrect: true }
+    q: "1. What is the normal pH level of the human blood?",
+    a: [{ text: "13.5", isCorrect: false },
+        { text: "6.0", isCorrect: false },
+        { text: "9.20", isCorrect: false },
+        { text: "7.40", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "2. Where is Stonehenge located?",
-    a: [{ text: "Iceland", isCorrect: false, isSelected: false },
-        { text: "England", isCorrect: true },
-        { text: "Stone Mountain", isCorrect: false },
-        { text: "Estonia", isCorrect: false }
+    q: "2. What is the pH and water?",
+    a: [{ text: "6", isCorrect: false, isSelected: false },
+        { text: "7", isCorrect: true },
+        { text: "8", isCorrect: false },
+        { text: "9", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "3. Where might one go to see giant stone heads?",
-    a: [{ text: "Stonehenge", isCorrect: false },
-        { text: "The Kremlin", isCorrect: false },
-        { text: "Estern Island", isCorrect: true },
-        { text: "cape Canarveral", isCorrect: false }
+    q: "3. What is the chemical symbol for table salt?",
+    a: [{ text: "S", isCorrect: false },
+        { text: "NaCI", isCorrect: true },
+        { text: "NH4F", isCorrect: false },
+        { text: "NA", isCorrect: false }
     ]
 
 },
 {
     id: 3,
-    q: "4. Where was the Bastille?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Rome", isCorrect: false },
-        { text: "New York", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "4. Which of the following planet was first discovered by a telescope?",
+    a: [{ text: "Uranus", isCorrect: true },
+        { text: "Venus", isCorrect: false },
+        { text: "Jupiter", isCorrect: false },
+        { text: "Mars", isCorrect: false }
     ]
 },
 {
     id:4,
-    q: "5.  In what city would one find the Brandenburg Gate?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Vienna", isCorrect: false },
-        { text: "Berlin", isCorrect: true },
-        { text: "London", isCorrect: false }
+    q: "5. Who invented the Bicycle?",
+    a: [{ text: "Karl Von Drais", isCorrect: true },
+        { text: "Da Vinci", isCorrect: false },
+        { text: "Jonh  Kemp", isCorrect: false },
+        { text: "Abraham Lincoln", isCorrect: false }
     ]
 },
 {
     id: 5,
-    q: "6. What is the largest US state by land area?",
-    a: [{ text: "Alaska", isCorrect: true },
-        { text: "California", isCorrect: false },
-        { text: "texas", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "6. Tinnitus problem is related to",
+    a: [{ text: "Mouth", isCorrect: false },
+        { text: "Nose", isCorrect: false },
+        { text: "Ear", isCorrect: true },
+        { text: "Eye", isCorrect: false }
     ]
 },
 {
     id: 6,
-    q: "7. What is the capital of Nevada?",
-    a: [{ text: "Jefferson City", isCorrect: false },
-        { text: "Carson City", isCorrect: true },
-        { text: "Reno", isCorrect: false },
-        { text: "Las Vegas", isCorrect: false }
+    q: "7. What is the most deadly infectious disease in America?",
+    a: [{ text: "Hepatitis B", isCorrect: false },
+        { text: "Hepatitis C", isCorrect: true },
+        { text: "Heart Disease", isCorrect: false },
+        { text: "Ebola", isCorrect: false }
+    ]  
+},
+{
+    id: 7,
+    q: "8. What is the most common disease in America? ",
+    a: [{ text: "Skin Cancer", isCorrect: false },
+        { text: "Stroke", isCorrect: false },
+        { text: "Diabetes", isCorrect: false },
+        { text: "Heart disease", isCorrect: true }
+    ]  
+},
+{
+    id: 8,
+    q: "9. What is the most commonly diagnosed cancer in men? ",
+    a: [{ text: "Lung", isCorrect: false },
+        { text: "Prostate", isCorrect: true },
+        { text: "Colon", isCorrect: false },
+        { text: "Lymphoma", isCorrect: false }
+    ]  
+},
+{
+    id: 9,
+    q: "10. What is the medical term for low blood sugar?",
+    a: [{ text: "Hyperglycaemia", isCorrect: false },
+        { text: "Myocardial", isCorrect: false },
+        { text: "Syncope", isCorrect: false },
+        { text: "Hypoglycemia", isCorrect: true }
+    ]  
+},
+{
+    id: 10,
+    q: "11. Which of the following is the largest bone in human body?",
+    a: [{ text: "Femur", isCorrect: true },
+        { text: "Sternum", isCorrect: false },
+        { text: "Tibia", isCorrect: false },
+        { text: "Stapes", isCorrect: false }
     ]  
 }
-
 
 ]
 
@@ -160,6 +195,11 @@ evaluate[0].addEventListener("click", () => {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
     }
+    setTimeout(() =>
+    {
+    result[0].innerHTML = "";
+    }, 500
+    )
 })
 }
 
@@ -179,18 +219,5 @@ if (id < 11) {
     console.log(id);
 } 
 
-})
-
-// // grab the result botttom 
-const rigth = document.getElementById("rigth")
-
-rigth.addEventListener("click", () => {
-    if(selected == "true") {
-        rigth[0].innerHTML = "rigth";
-        right[0].style.color= "blue"
-    } else {
-        rigth[0].innerHTML = "false";
-        rigth[0].style.color = "brown";
-    }
 })
 

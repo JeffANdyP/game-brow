@@ -72,7 +72,7 @@ const Questions = [{
 // Set start
 let start = true;
 
-// Iterate
+
 function iterate(id) {
 
 // Getting the result display section
@@ -98,20 +98,18 @@ op1.innerText = Questions[id].a[0].text;
 op2.innerText = Questions[id].a[1].text;
 op3.innerText = Questions[id].a[2].text;
 op4.innerText = Questions[id].a[3].text;
-// op1.innerText = Questions[id].a[].text;
 
-// Providing the true or false value to the options
+
+// state the true or false value to the options
 op1.value = Questions[id].a[0].isCorrect;
 op2.value = Questions[id].a[1].isCorrect;
 op3.value = Questions[id].a[2].isCorrect;
 op4.value = Questions[id].a[3].isCorrect;
-// op1.value = Questions[id].a[1].isCorrect;
+;
 
 var selected = "";
 
-// Show selection for op1
-// op1.addEventListener("click", () => {
-//     if()
+
 // })
 op1.addEventListener("click", () => {
     op1.style.backgroundColor = "lightgoldenrodyellow";
@@ -122,7 +120,6 @@ op1.addEventListener("click", () => {
 })
 
 // Show selection for op2
-
 op2.addEventListener("click", () => {
     op1.style.backgroundColor = "lightskyblue";
     op2.style.backgroundColor = "lightgoldenrodyellow";
@@ -149,10 +146,10 @@ op4.addEventListener("click", () => {
     selected = op4.value;
 })
 
-// Grabbing the evaluate button
+
 const evaluate = document.getElementsByClassName("evaluate");
 
-// Evaluate method
+
 evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "Rigth";
@@ -162,6 +159,11 @@ evaluate[0].addEventListener("click", () => {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
     }
+    setTimeout(() =>
+    {
+    result[0].innerHTML = "";
+    }, 500
+    )
 })
 }
 
@@ -169,7 +171,7 @@ if (start) {
 iterate("0");
 }
 
-// Next button and method
+
 const next  = document.getElementsByClassName("next")[0];
 var id = 0;
 
@@ -183,28 +185,10 @@ if (id < 11) {
 
 })
 
-// // grab the result botttom 
-const rigth = document.getElementById("rigth")
+// const clear = getElementById('reset')
 
-rigth.addEventListener("click", () => {
-    if(selected == "true") {
-        rigth[0].innerHTML = "rigth";
-        right[0].style.color= "blue"
-    } else {
-        rigth[0].innerHTML = "false";
-        rigth[0].style.color = "brown";
-    }
-})
+// function clear(){
+// document.getElementsByClassName('panel').reset();
 
+// }
 
-// // result method 
-
-// result.addEventListener("click", () => {
-//     if (selected == "true") {
-//         result[0].innerHTML = "True";
-//         result[0].style.color = "green";
-//     } else {
-//         result[0].innerHTML = "False";
-//         result[0].style.color = "red";
-//     }
-// })

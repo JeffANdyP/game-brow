@@ -1,118 +1,108 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "1. Where might one find the Acropolis?",
-    a: [{ text: "Rome", isCorrect: false },
-        { text: "Beijing", isCorrect: false },
-        { text: "Moscow", isCorrect: false },
-        { text: "Athens", isCorrect: true }
+    q: "1. What’s the diameter of a basketball hoop in inches?",
+    a: [{ text: "25 inches", isCorrect: false },
+        { text: "10 inches", isCorrect: false },
+        { text: "19 inches", isCorrect: false },
+        { text: "18 inches", isCorrect: true }
     ]
 
 },
 {
     id: 1,
-    q: "2. Where is Stonehenge located?",
-    a: [{ text: "Iceland", isCorrect: false, isSelected: false },
-        { text: "England", isCorrect: true },
-        { text: "Stone Mountain", isCorrect: false },
-        { text: "Estonia", isCorrect: false }
+    q: "2. The Olympics are held every how many years?",
+    a: [{ text: "10 years", isCorrect: false, isCorrect: false },
+        { text: "4 years", isCorrect: true },
+        { text: "6 years", isCorrect: false },
+        { text: "every year", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "3. Where might one go to see giant stone heads?",
-    a: [{ text: "Stonehenge", isCorrect: false },
-        { text: "The Kremlin", isCorrect: false },
-        { text: "Estern Island", isCorrect: true },
-        { text: "cape Canarveral", isCorrect: false }
+    q: "3. What sport is best known as the ‘king of sports’?",
+    a: [{ text: "Basquetball", isCorrect: false },
+        { text: "Football", isCorrect: false },
+        { text: "Soccer", isCorrect: true },
+        { text: "Tennis", isCorrect: false }
     ]
 
 },
 {
     id: 3,
-    q: "4. Where was the Bastille?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Rome", isCorrect: false },
-        { text: "New York", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "4. In which sports is the participant called pugilist?x",
+    a: [{ text: "Boxing", isCorrect: true },
+        { text: "Sprinter", isCorrect: false },
+        { text: "Wrestrling", isCorrect: false },
+        { text: "Javelin Throw", isCorrect: false }
     ]
 },
 {
     id:4,
-    q: "5.  In what city would one find the Brandenburg Gate?",
-    a: [{ text: "Paris", isCorrect: true },
-        { text: "Vienna", isCorrect: false },
-        { text: "Berlin", isCorrect: true },
-        { text: "London", isCorrect: false }
+    q: "5. The term ‘Butterfly Stroke’ is referred to in which sport?",
+    a: [{ text: "Swimming", isCorrect: true },
+        { text: "Wrestling", isCorrect: false },
+        { text: "Voleyball", isCorrect: true },
+        { text: "Tennis", isCorrect: false }
     ]
 },
 {
     id: 5,
-    q: "6. What is the largest US state by land area?",
-    a: [{ text: "Alaska", isCorrect: true },
-        { text: "California", isCorrect: false },
-        { text: "texas", isCorrect: false },
-        { text: "London", isCorrect: false }
+    q: "The term ‘Beamer’ is associated with",
+    a: [{ text: "Cricket", isCorrect: true },
+        { text: "Hockey", isCorrect: false },
+        { text: "Chess", isCorrect: false },
+        { text: "Football", isCorrect: false }
     ]
 },
 {
     id: 6,
     q: "7. What is the capital of Nevada?",
-    a: [{ text: "Jefferson City", isCorrect: false },
-        { text: "Carson City", isCorrect: true },
-        { text: "Reno", isCorrect: false },
-        { text: "Las Vegas", isCorrect: false }
+    a: [{ text: "6", isCorrect: false },
+        { text: "7", isCorrect: true },
+        { text: "8", isCorrect: false },
+        { text: "9", isCorrect: false }
     ]  
+},
+{
+    id: 7,
+    q: "In which sport would you have a touchdown?"
 }
 
 
 ]
 
-// Set start
 let start = true;
 
-// Iterate
 function iterate(id) {
-
-// Getting the result display section
 var result = document.getElementsByClassName("result");
 result[0].innerText = "";
 
-// Getting the question
+
 const question = document.getElementById("question");
-
-
-// Setting the question text
 question.innerText = Questions[id].q;
 
-// Getting the options
+
 const op1 = document.getElementById('op1');
 const op2 = document.getElementById('op2');
 const op3 = document.getElementById('op3');
 const op4 = document.getElementById('op4');
 
 
-// Providing option text
 op1.innerText = Questions[id].a[0].text;
 op2.innerText = Questions[id].a[1].text;
 op3.innerText = Questions[id].a[2].text;
 op4.innerText = Questions[id].a[3].text;
-// op1.innerText = Questions[id].a[].text;
 
-// Providing the true or false value to the options
+
 op1.value = Questions[id].a[0].isCorrect;
 op2.value = Questions[id].a[1].isCorrect;
 op3.value = Questions[id].a[2].isCorrect;
 op4.value = Questions[id].a[3].isCorrect;
-// op1.value = Questions[id].a[1].isCorrect;
 
 var selected = "";
 
-// Show selection for op1
-// op1.addEventListener("click", () => {
-//     if()
-// })
 op1.addEventListener("click", () => {
     op1.style.backgroundColor = "lightgoldenrodyellow";
     op2.style.backgroundColor = "lightskyblue";
@@ -120,8 +110,6 @@ op1.addEventListener("click", () => {
     op4.style.backgroundColor = "lightskyblue";
     selected = op1.value;
 })
-
-// Show selection for op2
 
 op2.addEventListener("click", () => {
     op1.style.backgroundColor = "lightskyblue";
@@ -157,11 +145,15 @@ evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "Rigth";
         result[0].style.color = "green";
-        
     } else {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
     }
+    setTimeout(() =>
+    {
+    result[0].innerHTML = "";
+    }, 500
+    )
 })
 }
 
@@ -183,16 +175,4 @@ if (id < 11) {
 
 })
 
-// // grab the result botttom 
-const rigth = document.getElementById("rigth")
-
-rigth.addEventListener("click", () => {
-    if(selected == "true") {
-        rigth[0].innerHTML = "rigth";
-        right[0].style.color= "blue"
-    } else {
-        rigth[0].innerHTML = "false";
-        rigth[0].style.color = "brown";
-    }
-})
 
