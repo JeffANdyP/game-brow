@@ -7,59 +7,14 @@ h1{
     color: rgb(216, 7, 7);
 }
 
-#categories{
-    /* font-size: 15px;
-    
-    width: 10px;
-    height: 45px;
-    background-color: rgb(51, 51, 51);
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    text-align: center;
-    z-index: 20;
-    border-radius: 2px; */
-    color: rgb(119,119,119);
-    display: flex;
-    /* justify-content: spacebetween; */
-    
-}
-li{
-    display: inline;
-
-
-    /* text-align: center; */
-}
-#Geography{
-    height: 100px;
-    width: 100px;
-}
-#sports{
-    height: 100px;
-    width: 100px;
-}
-#Science{
-    height: 100px;
-    width: 120px;
-}
-#History{
-    height: 100px;
-    width: 100px;
-}
-#Languages{
-    height: 100px;
-    width: 135px;
-}
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: white;
     background-color: #d69e1aaa;
     border-radius: 20px;
-    outline: none;
-    text-decoration: none;
-    color: black;
+    cursor: pointer;
+    
   }

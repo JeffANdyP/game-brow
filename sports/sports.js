@@ -49,7 +49,7 @@ const Questions = [{
 },
 {
     id: 5,
-    q: "The term ‘Beamer’ is associated with",
+    q: "6. The term ‘Beamer’ is associated with",
     a: [{ text: "Cricket", isCorrect: true },
         { text: "Hockey", isCorrect: false },
         { text: "Chess", isCorrect: false },
@@ -67,7 +67,39 @@ const Questions = [{
 },
 {
     id: 7,
-    q: "In which sport would you have a touchdown?"
+    q: "8. In which sport would you have a touchdown?",
+    a: [{text: "Soccer", isCorrect: false},
+        {text: "Football", isCorrect: true},
+        {text: "Tennis", isCorrect: false},
+        {text: "Basquetball", isCorrect: false},
+    ]
+},
+{
+    id: 8,
+    q: "9. How many players are there in a football (soccer) team?",
+    a: [{text: "7", isCorrect: false},
+        {text: "9", isCorrect: false},
+        {text: "11", isCorrect: true},
+        {text: "13", isCorrect: false},
+    ]
+},
+{
+    id: 9,
+    q: "10. With which team did Michael Jordan win 6 titles?",
+    a: [{text: "Chicago Bulls", isCorrect: true},
+        {text: "Brooklin Nets", isCorrect: false},
+        {text: "Phoenix Suns", isCorrect: false},
+        {text: "Los Angeles Lakers", isCorrect: false},
+    ]
+},
+{
+    id: 10,
+    q: "11. How many players are there in a cricket team?",
+    a: [{text: "5", isCorrect: false},
+        {text: "7", isCorrect: false},
+        {text: "9", isCorrect: false},
+        {text: "11", isCorrect: true},
+    ]
 }
 
 
@@ -119,7 +151,7 @@ op2.addEventListener("click", () => {
     selected = op2.value;
 })
 
-// Show selection for op3
+
 op3.addEventListener("click", () => {
     op1.style.backgroundColor = "lightskyblue";
     op2.style.backgroundColor = "lightskyblue";
@@ -128,7 +160,7 @@ op3.addEventListener("click", () => {
     selected = op3.value;
 })
 
-// Show selection for op4
+
 op4.addEventListener("click", () => {
     op1.style.backgroundColor = "lightskyblue";
     op2.style.backgroundColor = "lightskyblue";
@@ -136,8 +168,10 @@ op4.addEventListener("click", () => {
     op4.style.backgroundColor = "lightgoldenrodyellow";
     selected = op4.value;
 })
+// setTimeout( () =>
+//  ))
 
-// Grabbing the evaluate button
+
 const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
@@ -161,7 +195,7 @@ if (start) {
 iterate("0");
 }
 
-// Next button and method
+
 const next  = document.getElementsByClassName("next")[0];
 var id = 0;
 
@@ -171,8 +205,7 @@ if (id < 11) {
     id++;
     iterate(id);
     console.log(id);
-} 
-
+}
 })
 
 

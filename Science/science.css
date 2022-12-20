@@ -93,8 +93,10 @@ body{
 .evaluate{
 	
 	background-color: #63f7cd;
+	border-radius: 20px;
 }
 .next{
 	color: white;
 	background-color: #f7483e;
+	border-radius: 20px;
 }
