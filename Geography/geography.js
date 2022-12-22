@@ -173,9 +173,7 @@ op4.addEventListener("click", () => {
     op2.style.backgroundColor = "lightskyblue";
     op3.style.backgroundColor = "lightskyblue";
     op4.style.backgroundColor = "lightgoldenrodyellow";
-    selected = op4.value;
-    selected= "";
-    
+    selected = op4.value; 
 })
 
 
@@ -190,11 +188,10 @@ evaluate[0].addEventListener("click", () => {
     } else {
         result[0].innerHTML = "Wrong!";
         result[0].style.color = "red";
-    }
-    setTimeout(() =>
+    } setTimeout(() =>
     {
     result[0].innerHTML = "";
-    }, 500
+    }, 1500
     )
 })
 }
@@ -214,9 +211,6 @@ if (id < 11) {
     iterate(id);
     console.log(id);
 }
-// else if(id>10) {
-
-// }
 
 })
 
